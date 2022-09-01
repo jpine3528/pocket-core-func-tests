@@ -64,7 +64,7 @@ Feature: Genesis
             |  |
         And the node is stopped
         When user export genesis
-        When typing "util export-genesis-for-reset <height> <newChainID>"
+        When typing "pocket util export-genesis-for-reset <height> <newChainID>"
         Then the the response should include following result
             |  |
             "bridgepool": {
